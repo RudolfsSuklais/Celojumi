@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="stylesheet" href="./index.css" />
+        <link
+            rel="shortcut icon"
+            href="../../images/celojumu_organizacija_favicon.jpg"
+            type="image/x-icon" />
+        <title>Ceļojumu Organizācija</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="logo-wrapper">
+                    <a href="../../Pages/HomePage/index.html">
+                        <img
+                            src="../../images/celojumu_organizacija_favicon.jpg"
+                            alt="logo" />
+                    </a>
+                </div>
+
+                <ul class="menu">
+                    <li>
+                        <a href="../../Pages/HomePage/index.html">Sākums</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/AboutPage/index.html">Ceļojumi</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html">Jaunumi</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html"
+                            >Par Mums</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html"
+                            >Kontakti</a
+                        >
+                    </li>
+
+                    <li class="mobile-book-button">
+                        <button class="btn-no-fill">
+                            Pieteikties <i class="fa-solid fa-plane"></i>
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="book-button-wrapper desktop-book-button">
+                    <button class="btn-no-fill">
+                        Pieteikties <i class="fa-solid fa-plane"></i>
+                    </button>
+                </div>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+
+        <section class="hero-slider">
+            <div class="slide active">
+                <div class="hero-content">
+                    <h1>
+                        <span class="accent">Dodies Neaizmirstamā</span>
+                        Ceļojumā
+                    </h1>
+                    <p>
+                        Atklāj pasauli ar mums — mēs parūpēsimies par visu, lai
+                        Tu vari vienkārši baudīt piedzīvojumu!
+                    </p>
+                    <button class="btn-fill">
+                        Pieteikties <i class="fas fa-suitcase"></i>
+                    </button>
+                </div>
+                <img
+                    src="../../images/family_travel_slide_1.jpeg"
+                    alt="Slide 1" />
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h1><span class="accent">Izbaudi</span> Sauli un Jūru</h1>
+                    <p>
+                        No Vidusjūras līdz okeāniem — mēs piedāvājam unikālus
+                        maršrutus jebkurai gaumei.
+                    </p>
+                    <button class="btn-fill">
+                        Apskatīt <i class="fa-solid fa-umbrella-beach"></i>
+                    </button>
+                </div>
+                <img
+                    src="../../images/tropical_beach_escape_hero_slide_1.jpg"
+                    alt="Slide 2" />
+            </div>
+            <div class="slide">
+                <div class="hero-content">
+                    <h1>
+                        <span class="accent">Atrodi</span> Savu Piedzīvojumu
+                    </h1>
+                    <p>
+                        Kalni, pilsētas vai neapdzīvotas salas — mēs Tevi turp
+                        nogādāsim!
+                    </p>
+                    <button class="btn-fill">
+                        Uzzināt vairāk <i class="fa-solid fa-mountain"></i>
+                    </button>
+                </div>
+                <img
+                    src="../../images/travel_adventure_image_slide_3.jpeg"
+                    alt="Slide 3" />
+            </div>
+
+            <div class="slide-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+            </div>
+
+            <div class="slide-nav">
+                <button class="slide-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slide-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = document.querySelectorAll(".hero-slider .slide");
+                const indicators = document.querySelectorAll(".indicator");
+                let index = 0;
+                let slideInterval;
+
+                function updateIndicators() {
+                    indicators.forEach((indicator, i) => {
+                        if (i === index) {
+                            indicator.classList.add("active");
+                        } else {
+                            indicator.classList.remove("active");
+                        }
+                    });
+                }
+
+                function goToSlide(newIndex) {
+                    slides[index].classList.remove("active");
+                    index = (newIndex + slides.length) % slides.length;
+                    slides[index].classList.add("active");
+                    updateIndicators();
+
+                    clearInterval(slideInterval);
+                    slideInterval = setInterval(showNextSlide, 7000);
+                }
+
+                function showNextSlide() {
+                    goToSlide(index + 1);
+                }
+
+                function showPrevSlide() {
+                    goToSlide(index - 1);
+                }
+
+                slideInterval = setInterval(showNextSlide, 7000);
+
+                document
+                    .querySelector(".slide-next")
+                    .addEventListener("click", showNextSlide);
+                document
+                    .querySelector(".slide-prev")
+                    .addEventListener("click", showPrevSlide);
+
+                indicators.forEach((indicator) => {
+                    indicator.addEventListener("click", function () {
+                        const slideIndex = parseInt(
+                            this.getAttribute("data-slide")
+                        );
+                        goToSlide(slideIndex);
+                    });
+                });
+
+                document
+                    .querySelector(".menu-toggle")
+                    .addEventListener("click", function () {
+                        document
+                            .querySelector(".menu")
+                            .classList.toggle("active");
+                    });
+            });
+        </script>
+    </body>
+</html>
