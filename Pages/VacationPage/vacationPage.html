@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./vacationPage.css">
+    <link rel="shortcut icon" href="../images/celojumu_organizacija_favicon.png" type="image/x-icon">
+    <title>Latvijas Ceļojumi | Ceļojumu Aģentūra</title>
+</head>
+<body>
+      <nav class="navbar">
+            <div class="navbar-inner">
+                <div class="logo-wrapper">
+                    <a href="../../Pages/HomePage/index.html">
+                        <img
+                            src="../../images/celojumu_organizacija_favicon.png"
+                            alt="logo" />
+                    </a>
+                </div>
+
+                <ul class="menu">
+                    <li>
+                        <a href="../../Pages/HomePage/index.html">Sākums</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/VacationPage/vacationPage.html">Ceļojumi</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html">Jaunumi</a>
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html"
+                            >Par Mums</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../../Pages/ContactPage/index.html"
+                            >Kontakti</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="book-button-wrapper desktop-book-button">
+                    <button class="btn-no-fill">
+                        Pieteikties <i class="fa-solid fa-plane"></i>
+                    </button>
+                </div>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+
+
+    <section class="latvia-hero">
+        <div class="latvia-hero-content">
+            <h1><span class="accent">Atklāj</span> Latvijas skaistumu</h1>
+            <p>Ekskursijas, piedzīvojumi un atpūta visā Latvijā - no jūras līdz Latgales ezeriem</p>
+        </div>
+    </section>
+
+
+    <section class="tours-filter-section">
+        <div class="container">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="region">Reģions:</label>
+                    <select id="region">
+                        <option value="all">Visi reģioni</option>
+                        <option value="kurzeme">Kurzeme</option>
+                        <option value="vidzeme">Vidzeme</option>
+                        <option value="latgale">Latgale</option>
+                        <option value="zemgale">Zemgale</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="duration">Ilgums:</label>
+                    <select id="duration">
+                        <option value="all">Jebkāds ilgums</option>
+                        <option value="1">1 diena</option>
+                        <option value="2-3">2-3 dienas</option>
+                        <option value="4+">4+ dienas</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Cena:</label>
+                    <select id="price">
+                        <option value="all">Jebkāda cena</option>
+                        <option value="0-100">Līdz 100€</option>
+                        <option value="100-200">100-200€</option>
+                        <option value="200+">Virs 200€</option>
+                    </select>
+                </div>
+                
+                <button class="btn-fill filter-btn">
+                    <i class="fas fa-filter"></i> Filtrēt
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="latvia-tours">
+        <div class="container">
+            <h2 class="section-title">Piedāvātie ceļojumi pa Latviju</h2>
+            <p class="section-subtitle">Izvēlies savu nākamo piedzīvojumu dzimtenē</p>
+            
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/liepaja_tour.jpg" alt="Liepājas tūre">
+                        <div class="tour-price">€190</div>
+                        <div class="tour-badge">Bestseller</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 3 dienas
+                        </div>
+                        <h3>Liepājas jūras šarms</h3>
+                        <p class="tour-description">
+                            Atpūta Liepājas pludmalē, ekskursijas pa pilsētu, Karostas cietokšņa apskate un koncerti "Lielajā dzintarā".
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Liepāja, Kurzeme</span>
+                            <span><i class="fas fa-star"></i> 4.9 (87)</span>
+                        </div>
+                        <a href="../SingleVacationPage/singleVacation.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+          
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/sigulda_tour.jpeg" alt="Siguldas tūre">
+                        <div class="tour-price">€150</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 2 dienas
+                        </div>
+                        <h3>Siguldas piedzīvojumi</h3>
+                        <p class="tour-description">
+                            Pārgājieni pa Gaujas nacionālo parku, Turaidas pils, bobsleja trase un tarzāna parks aktīvajiem.
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Sigulda, Vidzeme</span>
+                            <span><i class="fas fa-star"></i> 4.8 (76)</span>
+                        </div>
+                        <a href="tour-sigulda.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/rezekne_tour.jpg" alt="Rēzeknes tūre">
+                        <div class="tour-price">€120</div>
+                        <div class="tour-badge">Jauns</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 2 dienas
+                        </div>
+                        <h3>Latgales kultūras mantojums</h3>
+                        <p class="tour-description">
+                            Ekskursijas pa Rēzekni, Ludzas pilsētu un raibajiem Latgales ezeriem, kā arī tradicionālas keramikas meistardarbnīca.
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Rēzekne, Latgale</span>
+                            <span><i class="fas fa-star"></i> 4.7 (58)</span>
+                        </div>
+                        <a href="tour-rezekne.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+       
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/rundale_tour.jpeg" alt="Rundāles pils">
+                        <div class="tour-price">€90</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 1 diena
+                        </div>
+                        <h3>Zemgales greznība: Rundāles pils</h3>
+                        <p class="tour-description">
+                            Ekskursija pa Rundāles pili un tās dārziem, kā arī apmeklējums Bauskas pilī un garšas degustācija vietējo produktu fermā.
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Bauska, Zemgale</span>
+                            <span><i class="fas fa-star"></i> 4.6 (92)</span>
+                        </div>
+                        <a href="tour-rundale.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/kuldiga_tour.jpg" alt="Kuldīgas tūre">
+                        <div class="tour-price">€110</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 2 dienas
+                        </div>
+                        <h3>Kuldīgas viduslaiku garsa</h3>
+                        <p class="tour-description">
+                            Apskate Kuldīgas vēsturiskajā centrā, Ventas rumba, vecā tilta un pastaiga pa Ventas upes krastu.
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Kuldīga, Kurzeme</span>
+                            <span><i class="fas fa-star"></i> 4.7 (64)</span>
+                        </div>
+                        <a href="tour-kuldiga.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="tour-card">
+                    <div class="tour-image">
+                        <img src="../../images/cesis_tour.jpeg" alt="Cēsu tūre">
+                        <div class="tour-price">€130</div>
+                    </div>
+                    <div class="tour-content">
+                        <div class="tour-duration">
+                            <i class="far fa-clock"></i> 2 dienas
+                        </div>
+                        <h3>Cēsu viduslaiku mantojums</h3>
+                        <p class="tour-description">
+                            Apskate Cēsu viduslaiku pils, Raunas upes ieleja un pastaiga pa Cēsu vēsturisko centru.
+                        </p>
+                        <div class="tour-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Cēsis, Vidzeme</span>
+                            <span><i class="fas fa-star"></i> 4.8 (71)</span>
+                        </div>
+                        <a href="tour-cesis.html" class="btn-fill tour-btn">
+                            Apskatīt <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="latvia-highlights">
+        <div class="container">
+            <h2 class="section-title">Latvijas <span class="accent">apskatu</span> vietas</h2>
+            <p class="section-subtitle">Iepazīsti populārākos galamērķus mūsu tūrēs</p>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <img src="../../images/gallery_kolka.jpg" alt="Kolkasrags">
+                    <div class="highlight-content">
+                        <h3>Kolkasrags</h3>
+                        <p>Kurzemes ziemeļu gals, kur satiekas Rīgas jūra un Baltijas jūra</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <img src="../../images/gallery_gauja.jpg" alt="Gaujas nacionālais parks">
+                    <div class="highlight-content">
+                        <h3>Gaujas nacionālais parks</h3>
+                        <p>Latvijas lielākais nacionālais parks ar iespaidīgām ainavām</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-card">
+                    <img src="../../images/gallery_aglona.jpg" alt="Aglonas bazilika">
+                    <div class="highlight-content">
+                        <h3>Aglonas bazilika</h3>
+                        <p>Nozīmīgs katoļu svētceļojumu galamērķis Latgalē</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latvia-seo">
+        <div class="container">
+            <h2>Ceļojumi pa Latviju</h2>
+            <p>
+                Latvija piedāvā neaizmirstamus ceļojumus un piedzīvojumus ikvienam - gan dabas mīļotājiem, gan vēstures entuziastiem, gan tiem, kas vienkārši vēlas atpūsties skaistā vidē. Mūsu ceļojumu aģentūra specializējas unikālu tūru organizēšanā pa visiem Latvijas stūriem.
+            </p>
+            
+            <h3>Kāpēc izvēlēties ceļojumus pa Latviju?</h3>
+            <p>
+                Ceļojot pa Latviju, jūs varat:
+            </p>
+            <ul>
+                <li>Iepazīt bagāto kultūras mantojumu un vēsturi</li>
+               li>Baudīt neatslābstošu dabas skaistumu</li>
+                <li>Atbalstīt vietējo tūrisma nozari</li>
+                <li>Ietaupīt laiku un naudu, ceļojot tuvumā</li>
+                <li>Atklāt jaunas vietas savā dzimtenē</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img
+                            src="../../images/celojumu_organizacija_favicon.png"
+                            alt="Ceļojumu organizācijas logo" />
+                        <h3>Ceļojumu Organizācija</h3>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> Brīvības iela
+                            123, Rīga, LV-1010
+                        </p>
+                        <p><i class="fas fa-phone"></i> +371 12345678</p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            info@celojumiorganizacija.lv
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"
+                            ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a href="#" aria-label="Instagram"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#" aria-label="Twitter"
+                            ><i class="fab fa-twitter"></i
+                        ></a>
+                        <a href="#" aria-label="YouTube"
+                            ><i class="fab fa-youtube"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ātrie saiti</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../../Pages/HomePage/index.html"
+                                ><i class="fas fa-chevron-right"></i> Sākums</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../Pages/AboutPage/index.html"
+                                ><i class="fas fa-chevron-right"></i>
+                                Ceļojumi</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../Pages/ContactPage/index.html"
+                                ><i class="fas fa-chevron-right"></i> Jaunumi</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../Pages/ContactPage/index.html"
+                                ><i class="fas fa-chevron-right"></i> Par
+                                mums</a
+                            >
+                        </li>
+                        <li>
+                            <a href="../../Pages/ContactPage/index.html"
+                                ><i class="fas fa-chevron-right"></i>
+                                Kontakti</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i> FAQ</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Pakalpojumi</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i> Ģimenes
+                                ceļojumi</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i> Eksotiskie
+                                piedzīvojumi</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i>
+                                Kultūrtūres</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i> Džungļu
+                                safari</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fas fa-chevron-right"></i> Kalnu
+                                slēpošana</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Jaunumu biļetens</h4>
+                    <p>
+                        Piesakies, lai saņemtu ekskluzīvus piedāvājumus un
+                        ceļojumu ieteikumus
+                    </p>
+                    <form class="newsletter-form">
+                        <input
+                            type="email"
+                            placeholder="Tavs e-pasts"
+                            required />
+                        <button type="submit" class="btn-footer">
+                            Pieteikties <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="payment-methods">
+                        <img src="../../images/visa.png" alt="Visa" />
+                        <img
+                            src="../../images/mastercard.png"
+                            alt="Mastercard" />
+                        <img src="../../images/paypal.png" alt="PayPal" />
+                        <img
+                            src="../../images/bank-transfer.png"
+                            alt="Bankas pārskaitījums" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <p>
+                        &copy; 2025 Ceļojumu Organizācija. Visas tiesības
+                        aizsargātas.
+                    </p>
+                    <div class="legal-links">
+                        <a href="#">Privātuma politika</a>
+                        <a href="#">Lietošanas noteikumi</a>
+                        <a href="#">Sīkdatņu politika</a>
+                    </div>
+                </div>
+            </div>
+
+            <button id="back-to-top" aria-label="Atgriezties uz augšu">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </footer>
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+                const backToTopButton = document.getElementById("back-to-top");
+
+                window.addEventListener("scroll", function () {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add("visible");
+                    } else {
+                        backToTopButton.classList.remove("visible");
+                    }
+                });
+
+                backToTopButton.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                });
+            });
+    </script>
+</body>
+</html>

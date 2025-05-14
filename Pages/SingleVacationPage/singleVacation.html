@@ -13,17 +13,16 @@
         <link rel="stylesheet" href="../../css/trip-styles.css" />
         <link
             rel="shortcut icon"
-            href="../../images/celojumu_organizacija_favicon.jpg"
+            href="../../images/celojumu_organizacija_favicon.png"
             type="image/x-icon" />
     </head>
     <body>
-        <!-- Navigācijas josla -->
         <nav class="navbar">
             <div class="navbar-inner">
                 <div class="logo-wrapper">
                     <a href="../../Pages/HomePage/index.html">
                         <img
-                            src="../../images/celojumu_organizacija_favicon.jpg"
+                            src="../../images/celojumu_organizacija_favicon.png"
                             alt="logo" />
                     </a>
                 </div>
@@ -33,7 +32,9 @@
                         <a href="../../Pages/HomePage/index.html">Sākums</a>
                     </li>
                     <li>
-                        <a href="../../Pages/AboutPage/index.html">Ceļojumi</a>
+                        <a href="../../Pages/VacationPage/vacationPage.html"
+                            >Ceļojumi</a
+                        >
                     </li>
                     <li>
                         <a href="../../Pages/ContactPage/index.html">Jaunumi</a>
@@ -59,7 +60,6 @@
             </div>
         </nav>
 
-        <!-- Ceļojuma Hero sekcija -->
         <section
             class="trip-hero"
             style="
@@ -94,7 +94,6 @@
             </div>
         </section>
 
-        <!-- Ceļojuma satura navigācija -->
         <nav class="trip-nav">
             <div class="container">
                 <ul>
@@ -109,9 +108,7 @@
             </div>
         </nav>
 
-        <!-- Galvenais ceļojuma saturs -->
         <main class="trip-container">
-            <!-- Pārskata sadaļa -->
             <section id="overview" class="trip-section">
                 <div class="container">
                     <h2>Ceļojuma apskats</h2>
@@ -119,7 +116,7 @@
                         <div class="overview-text">
                             <p>
                                 Šis īsais, bet intensīvais ceļojums pa Liepāju
-                                ir ideāls izvēle tiem, kas vēlas izbaudīt
+                                ir ideāla izvēle tiem, kas vēlas izbaudīt
                                 Kurzemes jūras šarmu un iepazīt vienu no
                                 skaistākajām Latvijas pilsētām. Ceļojuma laikā
                                 apmeklēsim Liepājas pludmales, vēsturisko centru
@@ -132,10 +129,7 @@
                                     <i class="fas fa-check"></i> Ekskursijas ar
                                     profesionāliem vietējiem gidiem
                                 </li>
-                                <li>
-                                    <i class="fas fa-check"></i> Liepājas
-                                    tradicionālo ēdienu degustācija
-                                </li>
+
                                 <li>
                                     <i class="fas fa-check"></i> Ērtas
                                     naktsmītnes pilsētas centrā
@@ -158,8 +152,8 @@
                                         <div>
                                             <strong>Nākamie datumi:</strong>
                                             <p>
-                                                2023-06-10, 2023-07-15,
-                                                2023-08-20
+                                                2025-06-10, 2025-07-15,
+                                                2025-08-20
                                             </p>
                                         </div>
                                     </div>
@@ -174,7 +168,7 @@
                                         <i class="fas fa-language"></i>
                                         <div>
                                             <strong>Valodas:</strong>
-                                            <p>Latviešu, krievu, angļu</p>
+                                            <p>Latviešu, angļu</p>
                                         </div>
                                     </div>
                                     <div class="fact-item">
@@ -235,12 +229,10 @@
                 </div>
             </section>
 
-            <!-- Maršruta sadaļa -->
             <section id="itinerary" class="trip-section itinerary-section">
                 <div class="container">
                     <h2>Detalizēts maršruts</h2>
                     <div class="itinerary-timeline">
-                        <!-- 1. diena -->
                         <div class="timeline-item">
                             <div class="timeline-day">
                                 <span>1</span>
@@ -264,13 +256,12 @@
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-hotel"></i>
-                                        <span>Hotel Libava</span>
+                                        <span>Promenade Hotel</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 2. diena -->
                         <div class="timeline-item">
                             <div class="timeline-day">
                                 <span>2</span>
@@ -301,13 +292,12 @@
                                     </div>
                                     <div class="detail-item">
                                         <i class="fas fa-hotel"></i>
-                                        <span>Hotel Libava</span>
+                                        <span>Promenade Hotel</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 3. diena -->
                         <div class="timeline-item">
                             <div class="timeline-day">
                                 <span>3</span>
@@ -333,7 +323,6 @@
                 </div>
             </section>
 
-            <!-- Iekļauto pakalpojumu sadaļa -->
             <section id="included" class="trip-section included-section">
                 <div class="container">
                     <h2>Kas iekļauts cenā</h2>
@@ -401,7 +390,6 @@
                 </div>
             </section>
 
-            <!-- Naktsmītņu sadaļa -->
             <section
                 id="accommodation"
                 class="trip-section accommodation-section">
@@ -411,16 +399,18 @@
                         <div class="hotel-card">
                             <div class="hotel-image">
                                 <img
-                                    src="../../images/hotel_libava.jpg"
-                                    alt="Hotel Libava" />
+                                    src="../../images/hotel_promenade.jpg"
+                                    alt="Promenade Hotel" />
                                 <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
                             <div class="hotel-info">
-                                <h3>Hotel Libava</h3>
+                                <h3>Promenade Hotel</h3>
                                 <p class="hotel-location">
                                     <i class="fas fa-map-marker-alt"></i>
                                     Liepāja, Latvija
@@ -455,7 +445,6 @@
                 </div>
             </section>
 
-            <!-- Galerijas sadaļa -->
             <section id="gallery" class="trip-section gallery-section">
                 <div class="container">
                     <h2>Ceļojuma galerija</h2>
@@ -469,10 +458,8 @@
                         <div class="gallery-item">
                             <img
                                 src="../../images/liepaja_2.jpg"
-                                alt="Karostas cietoksnis" />
-                            <div class="gallery-caption">
-                                Karostas cietoksnis
-                            </div>
+                                alt="Karostas cietums" />
+                            <div class="gallery-caption">Karostas cietums</div>
                         </div>
                         <div class="gallery-item">
                             <img
@@ -490,23 +477,14 @@
                         </div>
                         <div class="gallery-item">
                             <img
-                                src="../../images/liepaja_5.jpg"
+                                src="../../images/liepaja_5.jpeg"
                                 alt="Lielais dzintars" />
                             <div class="gallery-caption">Lielais dzintars</div>
-                        </div>
-                        <div class="gallery-item">
-                            <img
-                                src="../../images/liepaja_6.jpg"
-                                alt="Liepājas ēdiens" />
-                            <div class="gallery-caption">
-                                Tradicionālie Liepājas ēdieni
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Atsauksmju sadaļa -->
             <section id="reviews" class="trip-section reviews-section">
                 <div class="container">
                     <h2>Ceļotāju atsauksmes</h2>
@@ -514,7 +492,7 @@
                         <div class="review-card">
                             <div class="review-header">
                                 <img
-                                    src="../../images/reviewer_1.jpg"
+                                    src="../../images/client_1.jpg"
                                     alt="Anna Bērziņa"
                                     class="reviewer-avatar" />
                                 <div class="reviewer-info">
@@ -526,7 +504,7 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <span class="review-date">2023-05-20</span>
+                                    <span class="review-date">2025-05-20</span>
                                 </div>
                             </div>
                             <div class="review-content">
@@ -536,9 +514,9 @@
                                     pa Latviju, un es biju ļoti patīkami
                                     pārsteigta. Viss bija labi organizēts - no
                                     transporta līdz ekskursijām. Īpaši patika
-                                    mūsu gids Liepājā, kurš stāstīja tik
+                                    mūsu gids Liepājā, kurš stāstīja
                                     interesantus faktus par pilsētas vēsturi.
-                                    Karostas cietoksnis bija neaizmirstams
+                                    Karostas cietums bija neaizmirstams
                                     piedzīvojums! Noteikti iesaku šo ceļojumu.
                                 </p>
                             </div>
@@ -547,7 +525,7 @@
                         <div class="review-card">
                             <div class="review-header">
                                 <img
-                                    src="../../images/reviewer_2.jpg"
+                                    src="../../images/client_2.jpeg"
                                     alt="Jānis Ozoliņš"
                                     class="reviewer-avatar" />
                                 <div class="reviewer-info">
@@ -559,19 +537,19 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
-                                    <span class="review-date">2023-04-15</span>
+                                    <span class="review-date">2025-04-15</span>
                                 </div>
                             </div>
                             <div class="review-content">
                                 <h3>"Īss, bet intensīvs ceļojums"</h3>
                                 <p>
                                     Ceļojums bija ļoti interesants, īpaši patika
-                                    ekskursija pa Karostas cietoksni. Vienīgais,
+                                    ekskursija pa Karostas cietumu. Vienīgais,
                                     ko vēlētos uzlabot - vairāk brīvā laika
                                     pludmalē, jo tur mums bija tikai dažas
-                                    stundas. Viesnīca bija ļoti laba un ērti
-                                    izvietota. Ekskursijas bija interesantas un
-                                    informatīvas. Noteikti apsveru atkārtotu
+                                    stundas. Viesnīca bija ļoti laba un atradās
+                                    pašā centrā. Ekskursijas bija interesantas
+                                    un informatīvas. Noteikti apsveru atkārtotu
                                     ceļojumu ar šiem organizatoriem.
                                 </p>
                             </div>
@@ -581,7 +559,6 @@
                 </div>
             </section>
 
-            <!-- BUJ sadaļa -->
             <section id="faq" class="trip-section faq-section">
                 <div class="container">
                     <h2>Bieži uzdotie jautājumi</h2>
@@ -668,7 +645,6 @@
                 </div>
             </section>
 
-            <!-- Rezervācijas sadaļa -->
             <section class="trip-section booking-section">
                 <div class="container">
                     <div class="booking-card">
@@ -694,9 +670,9 @@
                 <div class="footer-column">
                     <div class="footer-logo">
                         <img
-                            src="../../images/celojumu_organizacija_favicon.jpg"
+                            src="../../images/celojumu_organizacija_favicon.png"
                             alt="Ceļojumu organizācijas logo" />
-                        <h3>Ceļojumu Organizācija</h3>
+                        <h3>Apskati Latviju</h3>
                     </div>
                     <div class="contact-info">
                         <p>
@@ -847,9 +823,32 @@
             </button>
         </footer>
 
+        <button id="back-to-top" aria-label="Atgriezties uz augšu">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Smooth scroll uz sadaļām
+                const backToTopButton = document.getElementById("back-to-top");
+
+                window.addEventListener("scroll", function () {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add("visible");
+                    } else {
+                        backToTopButton.classList.remove("visible");
+                    }
+                });
+
+                backToTopButton.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
                 document.querySelectorAll(".trip-nav a").forEach((anchor) => {
                     anchor.addEventListener("click", function (e) {
                         e.preventDefault();
@@ -863,7 +862,6 @@
                                 behavior: "smooth",
                             });
 
-                            // Atjaunina aktīvo navigācijas pogu
                             document
                                 .querySelectorAll(".trip-nav a")
                                 .forEach((link) => {
@@ -874,7 +872,6 @@
                     });
                 });
 
-                // Aktīvās navigācijas pārslēgšana ritinot
                 window.addEventListener("scroll", function () {
                     const scrollPosition = window.scrollY;
 
@@ -905,7 +902,6 @@
                         });
                 });
 
-                // BUJ sadaļas accordion funkcionalitāte
                 const accordionHeaders =
                     document.querySelectorAll(".accordion-header");
 
@@ -923,7 +919,6 @@
                     });
                 });
 
-                // Rezervācijas pogas
                 const bookButtons = document.querySelectorAll(
                     ".book-now-btn, .booking-actions .btn-fill"
                 );
@@ -936,7 +931,6 @@
                     });
                 });
 
-                // Kontaktu pogas
                 const contactButtons = document.querySelectorAll(
                     ".booking-actions .btn-no-fill"
                 );
