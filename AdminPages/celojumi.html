@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="stylesheet" href="./jaunumi.css" />
+        <link
+            rel="shortcut icon"
+            href="../images/celojumu_organizacija_favicon.jpg"
+            type="image/x-icon" />
+        <title>Ceļojumu pieteikumi</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="../images/celojumu_organizacija_favicon.jpg" alt="logo" />
+                    <h1>Administratora panelis > Jaunumi</h1>
+                </div>
+                <div class="header-buttons">
+                    <div class="book-button-wrapper desktop-book-button">
+                        <button class="btn-no-fill">
+                            Uz mājaslapu <i class="fas fa-home"></i>
+                        </button>
+                    </div>
+                    <div class="book-button-wrapper desktop-book-button">
+                        <button class="btn-no-fill">
+                            Izlogoties <i class="fas fa-walking"></i>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="sidebar-inner">
+                <ul class="menu">
+                   <li>
+                        <a href="index.html" >Pārskats</a>
+                    </li>
+                    <li>
+                        <a href="jaunumi.html">Jaunumi</a>
+                    </li>
+                    <li class="active-li">
+                        <a href="celojumi.html">Ceļojumi</a>
+                    </li>
+                    <li>
+                        <a href="pieteikumi.html">Pieteikumi</a>
+                    </li>
+                    <li>
+                        <a href="informacija.html">Informācija</a>
+                    </li>
+                </ul>
+                <button class="menu-toggle" style="display:none;"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+        <main class="content">
+            <section class="dashboard-section">
+            <h2><i class="fas fa-plane"></i>Ceļojumi (6)
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        Visi
+                    </button>
+                    <button class="filter-btn" data-filter="pieejams">
+                        Pieejami
+                    </button>
+                    <button class="filter-btn" data-filter="pilns">
+                        Pilni
+                    </button>
+                    <button class="filter-btn" data-filter="beidzies">
+                        Beigušies
+                    </button>
+                </div>
+            </h2>
+            <div class="dashboard-cards">
+                <div class="dashboard-card" data-category="pieejams">
+                    <h3>Liepāja, Primula</h3>
+                    <p>Iespēja apskatīt Liepājas prestižāko ikdienas produktu pirkšanas iestādi.</p>
+                    <div class="card-meta card-info">
+                        <span><i class="fas fa-users"></i> 12/20 vietas aizņemtas</span>
+                    </div>
+                    <div class="card-meta">
+                        <span class="status active">Pieejams</span>
+                        <button class="btn-sm">Redigēt <i class="fas fa-wrench"></i></button>
+                    </div>
+                </div>
+                <div class="dashboard-card" data-category="beidzies">
+                    <h3>Kuldīga, Ventas rumba</h3>
+                    <p>Iespēja apskatīt Kuldīgu, kā arī Eiropas platāko ūdenskritumu gida pavadījumā.</p>
+                    <div class="card-meta card-info">
+                        <span><i class="fas fa-users"></i> 18/18 vietas aizņemtas</span>
+                    </div>
+                    <div class="card-meta">
+                        <span class="status inactive">Beidzies</span>
+                        <button class="btn-sm">Redigēt <i class="fas fa-wrench"></i></button>
+                    </div>
+                </div>
+                <div class="dashboard-card" data-category="pilns">
+                    <h3>Rīga, Vecrīga</h3>
+                    <p>2 dienu eksukrsija pa Vecrīgu un dažādiem tradicionāliem piedzīvojumiem.</p>
+                    <div class="card-meta card-info">
+                        <span><i class="fas fa-users"></i> 18/18 vietas aizņemtas</span>
+                    </div>
+                    <div class="card-meta">
+                        <span class="status warning">Pilns</span>
+                        <button class="btn-sm">Redigēt <i class="fas fa-wrench"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <p>&copy; 2025 Ceļojumu Organizācija. Visas tiesības aizsargātas.</p>
+                    <div class="legal-links">
+                        <a href="#">Privātuma politika</a>
+                        <a href="#">Lietošanas noteikumi</a>
+                        <a href="#">Sīkdatņu politika</a>
+                    </div>
+                </div>
+            </div>
+        
+            <button id="back-to-top" aria-label="Atgriezties uz augšu">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <!-- EDIT WINDOW (not finished) -->
+            <div style="display: none;" class="edit-container">
+                <div class="edit-window">
+                    <div class="row">
+                        <p>Pēdējo reizi veiktas izmaiņas: 
+                            <p><i class="far fa-calendar"></i> 12/12/2025</p>
+                            <p><i class="far fa-clock"></i> 21:40</p>
+                        </p>
+                        <button class="btn-no-fill">Saglabāt</button>
+                    </div>
+                    <div class="row">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Enter title">
+                    </div>
+                    <div class="row">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="3" placeholder="Enter description"></textarea>
+                    </div>
+                    <div class="row">
+                        <p>Pēdējo reizi veiktas izmaiņas: </p>
+                    </div>
+                    <div class="row">
+                        <label for="display-date">Datums</label>
+                        <input type="date" id="display-date">
+                    </div>
+                    <div class="row">
+                        <button class="btn-no-fill">Pievienot bildi</button>
+                    </div>
+                    <div class="image-preview">
+                        <div class="image-box">
+                            <img src="../images/client_1.jpg" alt="img1">
+                            <button class="remove-btn"><i class="fas fa-remove"></i></button>
+                        </div>
+                        <div class="image-box">
+                            <img src="../images/client_2.jpeg" alt="img2">
+                            <button class="remove-btn"><i class="fas fa-remove"></i></button>
+                        </div>
+                        <div class="image-box">
+                            <img src="../images/client_3.jpg" alt="img3">
+                            <button class="remove-btn"><i class="fas fa-remove"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+<script>
+    
+            document.addEventListener("DOMContentLoaded", function () {
+                const filterButtons = document.querySelectorAll(".filter-btn");
+                const tourCards = document.querySelectorAll(".dashboard-card");
+
+                filterButtons.forEach((button) => {
+                    button.addEventListener("click", function () {
+                        filterButtons.forEach((btn) =>
+                            btn.classList.remove("active")
+                        );
+
+                        this.classList.add("active");
+
+                        const filterValue = this.getAttribute("data-filter");
+
+                        tourCards.forEach((card) => {
+                            if (
+                                filterValue === "all" ||
+                                card.getAttribute("data-category") ===
+                                    filterValue
+                            ) {
+                                card.style.display = "block";
+                                setTimeout(() => {
+                                    card.style.opacity = "1";
+                                }, 50);
+                            } else {
+                                card.style.opacity = "0";
+                                setTimeout(() => {
+                                    card.style.display = "none";
+                                }, 500);
+                            }
+                        });
+                    });
+                });
+            }); 
+</script>

@@ -155,16 +155,15 @@ header {
 .sidebar .menu li.active-li a::before {
     width: calc(100% - 2rem);
 }
-/* Content Area */
 body {
-    padding-top: 70px; /* Compensate for fixed header */
+    padding-top: 70px;
 }
 
 .content {
     margin-top: calc(70px - 100vh);
     padding-top: 20px;
     min-height: calc(100vh - 70px);
-    margin-left: 250px; /* Keep your sidebar spacing */
+    margin-left: 250px;
 }
 
 header {
@@ -573,4 +572,52 @@ header {
 #back-to-top:hover {
     background-color: #e05a00;
     transform: translateY(-3px);
+}
+/* FILTER BUTTONS */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+/* EDIT WINDOW */
+.edit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-window {
+  background: var(--color-gray);
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1001;
+  margin-top: 78px;
+  padding: 2rem;
 }
